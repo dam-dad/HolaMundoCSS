@@ -1,0 +1,41 @@
+.root {
+	-fx-font-family: serif;
+	-fx-font-size: 16pt;
+	-fx-background-image: url(../images/earth.jpg);
+	-fx-background-size: cover;
+}
+
+.text-field {
+	-fx-background-color: black, lightgray;
+	-fx-background-radius: 3px;
+	-fx-background-insets: 0px, 1px;
+}
+
+.label {
+	-fx-effect: dropshadow(gaussian, green, 10, 0.2, 3, 3)
+}
+
+#saludarButton {
+	-fx-text-fill: red;
+}
+
+#despedirButton {
+	-fx-text-fill: orange;
+}
+
+#saludoLabel {
+	-fx-text-fill: linear-gradient(from 0% 0% to 0% 100%, blue 0, white 100);
+	-fx-font-size: 40pt;
+}
+
+.button:hover {
+	-fx-effect: dropshadow(gaussian, black, 10, 0.1, 2, 2);
+}
+
+.button:armed {
+	-fx-background-color: yellow, lightyellow;
+}
+
+.botones-negros {
+	
+}
