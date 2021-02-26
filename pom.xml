@@ -26,19 +26,12 @@
 		</dependency>
 	</dependencies>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>javapackager</id>
-			<url>https://github.com/fvarrui/JavaPackager/raw/master/releases</url>
-		</pluginRepository>
-	</pluginRepositories>
-
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>fvarrui.maven</groupId>
+				<groupId>io.github.fvarrui</groupId>
 				<artifactId>javapackager</artifactId>
-				<version>0.8.9</version>
+				<version>1.5.1</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -46,7 +39,18 @@
 							<goal>package</goal>
 						</goals>
 						<configuration>
-							<bundleJre>true</bundleJre>
+							<additionalResources>
+								<additionalResource>README.md</additionalResource>
+							</additionalResources>
+							<mainClass>dad.javafx.holamundo.css.Main</mainClass>
+							<organizationName>DAD</organizationName>
+							<bundleJre>false</bundleJre>
+							<createZipball>true</createZipball>
+							<generateInstaller>false</generateInstaller>
+							<winConfig>
+								<generateMsi>false</generateMsi>
+								<icoFile>earth.ico</icoFile>
+							</winConfig>
 						</configuration>
 					</execution>
 				</executions>
