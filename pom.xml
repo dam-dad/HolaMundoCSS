@@ -39,18 +39,17 @@
 							<goal>package</goal>
 						</goals>
 						<configuration>
+							<mainClass>dad.javafx.holamundo.css.Main</mainClass>
+							<bundleJre>true</bundleJre>
+							<organizationName>Fran Vargas</organizationName>
 							<additionalResources>
 								<additionalResource>README.md</additionalResource>
 							</additionalResources>
-							<mainClass>dad.javafx.holamundo.css.Main</mainClass>
-							<organizationName>DAD</organizationName>
-							<bundleJre>false</bundleJre>
-							<createZipball>true</createZipball>
-							<generateInstaller>false</generateInstaller>
 							<winConfig>
-								<generateMsi>false</generateMsi>
 								<icoFile>earth.ico</icoFile>
+								<generateMsi>false</generateMsi>
 							</winConfig>
+							<createZipball>true</createZipball>
 						</configuration>
 					</execution>
 				</executions>
