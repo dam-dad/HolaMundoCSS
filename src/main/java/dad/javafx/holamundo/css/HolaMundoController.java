@@ -13,6 +13,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
 public class HolaMundoController implements Initializable {
@@ -39,6 +41,9 @@ public class HolaMundoController implements Initializable {
     @FXML
     private Label saludoLabel;
     
+    @FXML
+    private ImageView animacionImage;
+    
     public HolaMundoController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/HolaMundoView.fxml"));
 		loader.setController(this);
@@ -50,6 +55,8 @@ public class HolaMundoController implements Initializable {
 
 		nombre.bind(nombreText.textProperty());
 		saludoLabel.textProperty().bind(saludo);
+		
+		animacionImage.setImage(new Image("/images/rabbit-cat-sd.gif"));
 		
 	}
 
