@@ -2,6 +2,8 @@
 
 HolaMundo en JavaFX usando hojas de estilos CSS.
 
+![Captura de pantalla](docs/images/screenshot.png)]
+
 ## Requerimientos
 
 Para poder compilar la aplicación es necesario:
@@ -14,7 +16,7 @@ Para poder compilar la aplicación es necesario:
 Instrucciones de construcción del proyecto:
 
 ```bash
-mvn clean compile
+mvn clean compile 
 ```
 
 Para ejecutar desde el código compilado:
@@ -22,3 +24,7 @@ Para ejecutar desde el código compilado:
 ```bash
 mvn exec:java
 ```
+
+## Guía de usuario
+
+Vete a [Google](https://google.com) y lo buscas o consulta [nuestra guía](docs/).
