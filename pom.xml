@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dad.javafx</groupId>
 	<artifactId>HolaMundoCSS</artifactId>
@@ -29,12 +31,12 @@
 			<plugin>
 				<groupId>io.github.fvarrui</groupId>
 				<artifactId>javapackager</artifactId>
-				<version>1.6.3</version>
+				<version>1.7.5</version>
 				<configuration>
 					<mainClass>dad.javafx.holamundo.css.Main</mainClass>
 					<bundleJre>true</bundleJre>
 					<generateInstaller>true</generateInstaller>
-					<customizedJre>false</customizedJre>
+					<customizedJre>true</customizedJre>
 				</configuration>
 				<executions>
 					<execution>
@@ -45,31 +47,10 @@
 						</goals>
 						<configuration>
 							<platform>windows</platform>
-							<createZipball>true</createZipball>
-						</configuration>
-					</execution>
-					<execution>
-						<id>linux-installer</id>
-						<phase>package</phase>
-						<goals>
-							<goal>package</goal>
-						</goals>
-						<configuration>
-							<platform>linux</platform>
-							<generateInstaller>false</generateInstaller>
-							<createTarball>true</createTarball>
-						</configuration>
-					</execution>
-					<execution>
-						<id>mac-installer</id>
-						<phase>package</phase>
-						<goals>
-							<goal>package</goal>
-						</goals>
-						<configuration>
-							<platform>mac</platform>
-							<generateInstaller>false</generateInstaller>
-							<createTarball>true</createTarball>
+							<winConfig>
+								<generateSetup>true</generateSetup>
+								<generateMsi>false</generateMsi>
+							</winConfig>
 						</configuration>
 					</execution>
 				</executions>
