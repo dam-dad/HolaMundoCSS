@@ -17,6 +17,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
+/**
+ * Controlador de la aplicación HolaMundo
+ * @author fvarrui
+ */
 public class HolaMundoController implements Initializable {
 	
 	// model
@@ -44,6 +48,10 @@ public class HolaMundoController implements Initializable {
     @FXML
     private ImageView animacionImage;
     
+    /**
+     * Constructor del controlador HolaMundo
+     * @throws IOException Error cuando no se encuentra el FXML o hat errores en el documento
+     */
     public HolaMundoController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/HolaMundoView.fxml"));
 		loader.setController(this);
@@ -64,6 +72,10 @@ public class HolaMundoController implements Initializable {
 		return view;
 	}
 	
+	/**
+	 * Acción que se realiza al pulsar el botón despedir 
+	 * @param event Información sobre el evento
+	 */
     @FXML
     void onDespedirAction(ActionEvent event) {
     	saludo.set(("¡Adiós " + nombre.get()).trim() + "!");
