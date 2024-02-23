@@ -27,4 +27,4 @@ mvn exec:java
 
 ## Guía de usuario
 
-Vete a [Google](https://google.com) y lo buscas o consulta [nuestra guía](docs/).
+Vete a [Google](https://google.com) y lo buscas o consulta [nuestra guía](docs/guia-usuario.md).
