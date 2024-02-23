@@ -56,7 +56,7 @@ public class HolaMundoController implements Initializable {
 		nombre.bind(nombreText.textProperty());
 		saludoLabel.textProperty().bind(saludo);
 		
-		animacionImage.setImage(new Image("/images/rabbit-cat-sd.gif"));
+//		animacionImage.setImage(new Image("/images/rabbit-cat-sd.gif"));
 		
 	}
 

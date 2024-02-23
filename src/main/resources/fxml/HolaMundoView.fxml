@@ -9,26 +9,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox fx:id="view" alignment="CENTER" fillWidth="false"
-	prefHeight="200.0" prefWidth="320.0" spacing="5.0"
-	stylesheets="@../css/holamundo.css" xmlns="http://javafx.com/javafx/17"
-	xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="view" alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="320.0" spacing="5.0" stylesheets="@../css/holamundo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
-		<ImageView fx:id="animacionImage" pickOnBounds="true"
-			preserveRatio="true">
-			<image>
-				<Image url="@../images/rabbit-cat-sd.gif" />
-			</image>
-		</ImageView>
-		<TextField fx:id="nombreText"
-			promptText="Introduce un nombre" />
+		<TextField fx:id="nombreText" promptText="Introduce un nombre" />
 		<HBox spacing="5.0">
 			<children>
-				<Button fx:id="saludarButton" mnemonicParsing="false"
-					onAction="#onSaludarAction" styleClass="botones-negros"
-					text="Saludar" />
-				<Button fx:id="despedirButton" mnemonicParsing="false"
-					onAction="#onDespedirAction" text="Despedir" />
+				<Button id="saludarButton" fx:id="saludarButton" mnemonicParsing="false" onAction="#onSaludarAction" styleClass="botones-negros" text="Saludar" />
+				<Button fx:id="despedirButton" mnemonicParsing="false" onAction="#onDespedirAction" text="Despedir" />
 			</children>
 		</HBox>
 		<Label fx:id="saludoLabel" text="Label" />
